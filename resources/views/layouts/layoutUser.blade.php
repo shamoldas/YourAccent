@@ -45,6 +45,7 @@
                         @elseif(Auth::check() && Auth::user()->type == "manager")
                            @include('post.sidenav')
                         
+                  
                         @else                     
                           @include('user.sidenavUser')                      
                         @endif

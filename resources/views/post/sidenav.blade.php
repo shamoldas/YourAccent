@@ -19,6 +19,9 @@
                            
                    <!-- <a class="list-group-item list-group-item-action" href="{{ route('post.create') }}">CreatePost</a>-->
                     <a class="list-group-item list-group-item-action" href="{{ route('post.create') }}">Create Blog Post</a>
+
+                    <a class="list-group-item list-group-item-action" href="{{url('post')}}">All Post</a>
+                    <a class="list-group-item list-group-item-action" href="{{url('mypost')}}">My Post</a>
                     <a class="list-group-item list-group-item-action" href="{{ route('userpost') }}">Create Comment</a>
                 
                  

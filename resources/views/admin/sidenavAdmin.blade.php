@@ -17,12 +17,10 @@
 
             <div class="list-group">
 
-             <a class="list-group-item list-group-item-action" href="{{route('userList')}}">Topic Create</a>
-                          
-           	  <a class="list-group-item list-group-item-action" href="{{route('userList')}}">Role Deviler</a>
-
-                <a class="list-group-item list-group-item-action" href="">Activity</a>
-                    
+             <a class="list-group-item list-group-item-action" href="{{route('category')}}">Topic Category</a>
+              <a class="list-group-item list-group-item-action" href="{{url('post')}}">All Post</a>
+            <a class="list-group-item list-group-item-action" href="{{route('mypost')}}">MyPost</a>           
+           	  <a class="list-group-item list-group-item-action" href="{{route('userList')}}">Role Deviler</a>                    
                 
                  
                 

@@ -1,3 +1,6 @@
+
+@if(Auth::check() && Auth::user()->type == "user")
+
 <section class="mt-3">
         <div class="card">
                 <div class="card-header">{{ __('Dashboard') }}
@@ -17,10 +20,10 @@
 
             <div class="list-group">
                            
-           
-                <a class="list-group-item list-group-item-action" href="">Activity</a>
+           <a class="list-group-item list-group-item-action" href="{{route('home')}}">Home Page</a>
+            <a class="list-group-item list-group-item-action" href="{{route('mypost')}}">Activity</a>
                     
-                
+            <a class="list-group-item list-group-item-action" href="{{route('myComment')}}">My Comment</a>   
                  
                 
 
@@ -37,3 +40,4 @@
             </div>
 </section>
 
+@endif

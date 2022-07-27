@@ -1,6 +1,5 @@
 <!-- _comment_replies.blade.php -->
 
-<h4>ShamolDas</h4>
 
 
   @foreach ($comments as $comment)
@@ -38,7 +37,7 @@
     <h3>Hello Boyz</h3>
 @endforeach
 -->
-<p> End The</p>
+
 
 
 

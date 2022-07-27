@@ -47,8 +47,12 @@
                                 
                                 <td>{{ $user->type }}</td>
                                 <td>
-                                    <a href="{{ route('admin.edit', $user->id) }}" class="btn btn-primary btn-sm">Edit</a>
+                                 <a href="{{ route('admin.edit', $user->id) }}" class="btn btn-primary btn-sm">Edit</a>
+                         
                                 </td>
+
+                                
+                                
                             </tr>
                             @endforeach
                         </tbody>

@@ -41,6 +41,10 @@
                         
                         
 
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url('last5') }}">Latest 5</a>
+                            </li>
+
                         
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ url('blog') }}">Discussion</a>
@@ -50,6 +54,14 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('userpost') }}">Show My Post</a>
                             </li>
+
+                             <li class="nav-item">
+                                <a class="nav-link" href="{{ route('categoryShow') }}">Category Description</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('about') }}">About</a>
+                            </li>
+
 
 
                     </ul>

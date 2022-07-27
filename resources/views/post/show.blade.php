@@ -24,15 +24,27 @@
 				 		</p>
 				 		<hr />
 				 		<h4>Display Comments</h4>
+				 		  @foreach ($comments as $comment)
+
+				 		     <div class="display-comment">
+	                            <strong>{{ $comment->user->name }}</strong>
+	                            <p>{{ $comment->body }}</p>
+	                        </div>
+	                        @include('_comment_replies', ['comments' => $post->comments, 'post_id' => $post->id])
+		                          
+
+		                @endforeach
+
 				 		@include('_comment_replies', ['comments' => $post->comments, 'post_id' => $post->id])
 
 
-				 		  @foreach($post->comments as $comment)
+
+				 		 @foreach($post->comments as $comment)
                         <div class="display-comment">
                             <strong>{{ $comment->user->name }}</strong>
                             <p>{{ $comment->body }}</p>
                         </div>
-                    @endforeach
+                    	@endforeach
                     
 
 			 			@include('partials._comment_replies', ['comments' => $post->comments, 'post_id' => $post->id])

@@ -20,9 +20,8 @@ class BlogController extends Controller
         //
 
          $posts = Post::all();
-
          $comments = Comment::all();
-         $posts=Post::paginate(5);
+         $posts=Post::paginate(10);
          return view('post.blog', compact('posts','comments'));
     }
 
@@ -105,10 +104,29 @@ class BlogController extends Controller
         ->where('title', 'LIKE', "%{$search}%")
         ->orWhere('body', 'LIKE', "%{$search}%")
         ->orWhere('created_at', 'like', "%'$search'%")
-         ->orderBy('id', 'desc')
+        ->orderBy('id', 'ASC')
         ->get();
 
     // Return the search view with the resluts compacted
     return view('post.searchpost', compact('posts'));
     }
+
+    public function about()
+    {
+        //
+        return view('about');
+    }
+
+    public function last5()
+    {
+        //
+
+         //$posts = Post::all();
+
+         $posts= Post::latest()->paginate(5);
+
+         $comments = Comment::all();
+         return view('post.last5', compact('posts','comments'));
+    }
+
 }
