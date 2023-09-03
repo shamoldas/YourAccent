@@ -1,4 +1,4 @@
-<center><a href="https://ubzwmcz3hn5brqlx2ku0sw.on.drv.tw/web/School/"> Live Link for This Project(FrontEnd)</a></center>
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
